@@ -2,7 +2,7 @@
   "name": "typescript-task-manager",
   "version": "1.0.0",
   "description": "A simple typescript application for learn typescript and javascript.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/hittten/typescript-task-manager/issues"
   },
-  "homepage": "https://github.com/hittten/typescript-task-manager#readme"
+  "homepage": "https://github.com/hittten/typescript-task-manager#readme",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
 }
