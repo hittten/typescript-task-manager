@@ -1,13 +1,125 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Administrador de tareas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Administrador de tareas</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;800&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+        rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <script defer src="bundle.js"></script>
 </head>
 <body>
-<script src="bundle.js"></script>
+<header>
+  <h1>Administrador de tareas</h1>
+</header>
+<main>
+  <label>
+    <input id="taskInput" type="text" placeholder="¿Qué necesitas hacer?">
+  </label>
+  <ul id="taskList">
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Mi primera tarea</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Una tarea sin terminar</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input checked type="checkbox">
+        <span>Una tarea terminada</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li class="updating">
+      <div>
+        <input type="checkbox">
+        <span>Una tarea en modo edición</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+      <input type="text" value="Una tarea en modo edición"><span class="material-icons">done</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Una tarea para eliminar</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Una tarea con un texto muy largo: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid asperiores consequuntur dolorem excepturi fugiat harum ipsa iure laboriosam libero minima neque porro possimus quam, quasi qui saepe velit veritatis."</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Tarea numero 7</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Tarea numero 8</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Tarea numero 9</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+    <li>
+      <div>
+        <input type="checkbox">
+        <span>Tarea numero 10</span>
+      </div>
+      <span class="material-icons">delete_outline</span>
+    </li>
+  </ul>
+  <div class="info">
+    <p>Quedan 9 tareas</p>
+    <div>
+      <button class="button" disabled>Todas</button>
+      <button class="button">Pendientes</button>
+      <button class="button">Completadas</button>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>Autor: Gilberto López Ambrosino</p>
+  <p>GitHub: <a target="_blank" href="https://github.com/hittten/typescript-task-manager">https://github.com/hittten/typescript-task-manager</a>
+  </p>
+</footer>
+<div class="modal">
+  <div class="box">
+    <h2>¿Estás seguro de que deseas eliminar esta tarea?</h2>
+    <p>Una tarea para eliminar</p>
+    <div>
+      <button class="button large">Si</button>
+      <button class="button large">No</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
