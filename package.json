@@ -4,6 +4,7 @@
   "description": "A simple typescript application for learn typescript and javascript.",
   "private": true,
   "scripts": {
+    "start": "webpack serve",
     "build": "webpack"
   },
   "repository": {
@@ -28,6 +29,7 @@
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
     "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   }
 }

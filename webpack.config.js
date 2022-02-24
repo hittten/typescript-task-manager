@@ -14,6 +14,14 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    watchFiles: ["src/**"],
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+  },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
